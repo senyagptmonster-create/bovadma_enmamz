@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
 import 'app/brand.dart';
+import 'app/store.dart';
 import 'app/theme.dart';
 import 'initial_page.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Store.init();
   runApp(const MainApp());
 }
 

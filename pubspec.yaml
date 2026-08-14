@@ -67,7 +67,12 @@ flutter:
   assets:
     - assets/images/icon.png
     - assets/images/icon_splash.png
-    - assets/json/content.json
+    - assets/fonts/
+  fonts:
+    - family: AppDisplay
+      fonts:
+        - asset: assets/fonts/Nunito-SemiBold.ttf
+          weight: 600
 
   # To add assets to your application, add an assets section, like this:
   # assets:
@@ -109,8 +114,6 @@ flutter_launcher_icons:
   adaptive_icon_background: "#000000"
   adaptive_icon_foreground: "assets/images/icon.png"
 
-# Иконка сплэша берётся с прозрачными полями: Android 12 накладывает на неё
-# круглую маску, и full-bleed квадрат потерял бы углы.
 flutter_native_splash:
   color: "#000000"
   image: assets/images/icon_splash.png

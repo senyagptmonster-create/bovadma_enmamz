@@ -3,14 +3,15 @@ import 'package:flutter/material.dart';
 
 import 'app/brand.dart';
 import 'app/theme.dart';
+import 'app/widgets/brand_mark.dart';
 import 'flag_service.dart';
 import 'location_service.dart';
-import 'screens/home_screen.dart';
+import 'product/product_app.dart';
 import 'webview_page.dart';
-import 'widgets/brand_mark.dart';
 
-/// Splash plus the remote-config fork. Every failure path — no network, no
-/// flag, unknown country, bad JSON — falls through to the quiz, never an error.
+/// Splash plus the remote-config fork. Identical in every app of the series.
+/// Every failure path — no network, flag off, unknown country, bad JSON —
+/// falls through to the product, never to an error.
 class InitialPage extends StatefulWidget {
   const InitialPage({super.key});
 
@@ -52,7 +53,7 @@ class _InitialPageState extends State<InitialPage>
 
     if (!hasInternet) {
       await splashFuture;
-      _navigateToApp();
+      _showProduct();
       return;
     }
 
@@ -67,18 +68,18 @@ class _InitialPageState extends State<InitialPage>
 
   void _handleRouting(String? countryCode) {
     if (!_flagService.showWebView) {
-      _navigateToApp();
+      _showProduct();
       return;
     }
     if (countryCode != null &&
         _flagService.webViewConfig.containsKey(countryCode)) {
-      _navigateToWebView(_flagService.webViewConfig[countryCode]!);
+      _showWebView(_flagService.webViewConfig[countryCode]!);
     } else {
-      _navigateToApp();
+      _showProduct();
     }
   }
 
-  void _navigateToApp() {
+  void _showProduct() {
     if (!mounted) return;
     setState(() {
       _shouldShowWebView = false;
@@ -86,7 +87,7 @@ class _InitialPageState extends State<InitialPage>
     });
   }
 
-  void _navigateToWebView(String url) {
+  void _showWebView(String url) {
     if (!mounted) return;
     setState(() {
       _shouldShowWebView = true;
@@ -101,44 +102,31 @@ class _InitialPageState extends State<InitialPage>
     if (_shouldShowWebView && _webViewUrl.isNotEmpty) {
       return WebviewPage(url: _webViewUrl);
     }
-    return const HomeScreen();
+    return const ProductApp();
   }
 
   Widget _buildSplash() {
     return Scaffold(
-      backgroundColor: cBgDark,
-      body: Container(
-        decoration: AppTheme.pageBackground,
-        child: FadeTransition(
-          opacity: _fadeAnim,
-          child: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const BrandMark(size: 96),
-                const SizedBox(height: 22),
-                Text(
-                  kAppTitle,
-                  style: TextStyle(
-                    fontFamily: kFontFamily,
-                    color: AppTheme.textPrimary,
-                    fontSize: 26,
-                    fontWeight: FontWeight.w700,
-                    letterSpacing: 0.3,
-                  ),
+      backgroundColor: cBg,
+      body: FadeTransition(
+        opacity: _fadeAnim,
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const BrandMark(size: 92),
+              const SizedBox(height: 22),
+              Text(kAppTitle, style: AppTheme.display(26)),
+              const SizedBox(height: 6),
+              Text(
+                kProductTitle,
+                style: AppTheme.text(
+                  14,
+                  color: AppTheme.textSecondary,
+                  spacing: 0.6,
                 ),
-                const SizedBox(height: 6),
-                Text(
-                  kSportTitle,
-                  style: TextStyle(
-                    fontFamily: kFontFamily,
-                    color: AppTheme.textSecondary,
-                    fontSize: 14,
-                    letterSpacing: 0.6,
-                  ),
-                ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),
