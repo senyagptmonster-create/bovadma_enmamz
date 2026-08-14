@@ -67,6 +67,7 @@ flutter:
   assets:
     - assets/images/icon.png
     - assets/images/icon_splash.png
+    - assets/json/
     - assets/fonts/
   fonts:
     - family: AppDisplay

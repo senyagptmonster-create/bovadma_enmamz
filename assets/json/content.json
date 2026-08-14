@@ -1,0 +1,50 @@
+{
+  "routines": [
+    {
+      "id": "full",
+      "name": "Full Body Reset",
+      "focus": "A balanced pass from neck to ankles",
+      "poses": [
+        {"name": "Neck Rolls", "seconds": 30, "cue": "Slow half circles, chin toward the chest, never rolling backwards."},
+        {"name": "Shoulder Opener", "seconds": 40, "cue": "Clasp hands behind the back, lift gently and keep the ribs down."},
+        {"name": "Standing Forward Fold", "seconds": 45, "cue": "Soft knees. Let the head hang and breathe into the hamstrings."},
+        {"name": "Low Lunge, Left", "seconds": 40, "cue": "Back knee down, hips press forward, chest tall."},
+        {"name": "Low Lunge, Right", "seconds": 40, "cue": "Same on the other side. Keep the front knee over the ankle."},
+        {"name": "Seated Twist", "seconds": 40, "cue": "Lengthen the spine first, then rotate. Both sides."},
+        {"name": "Figure Four", "seconds": 45, "cue": "Ankle over the opposite knee, draw the thigh in. Both sides."},
+        {"name": "Calf Stretch", "seconds": 40, "cue": "Heel down, back leg straight, lean into a wall."},
+        {"name": "Child's Pose", "seconds": 60, "cue": "Knees wide, arms long, forehead resting. Slow exhale."}
+      ]
+    },
+    {
+      "id": "lower",
+      "name": "Legs & Hips",
+      "focus": "For after running or a heavy leg session",
+      "poses": [
+        {"name": "Hip Flexor Stretch", "seconds": 45, "cue": "Tuck the pelvis under before leaning forward. Both sides."},
+        {"name": "Hamstring Reach", "seconds": 45, "cue": "One leg extended, hinge from the hip, spine long. Both sides."},
+        {"name": "Quad Pull", "seconds": 40, "cue": "Knees together, heel to glute, push the hip forward. Both sides."},
+        {"name": "Butterfly", "seconds": 50, "cue": "Soles together, let the knees fall. Never bounce."},
+        {"name": "Pigeon", "seconds": 60, "cue": "Front shin angled, hips square, sink slowly. Both sides."},
+        {"name": "Calf & Achilles", "seconds": 40, "cue": "Straight leg first, then a bent knee for the lower calf."},
+        {"name": "Lying Hamstring", "seconds": 45, "cue": "Strap or hands behind the thigh, leg as straight as it allows."},
+        {"name": "Supine Twist", "seconds": 50, "cue": "Knees drop to one side, shoulders stay down. Both sides."}
+      ]
+    },
+    {
+      "id": "upper",
+      "name": "Back & Shoulders",
+      "focus": "Undo a day at a desk",
+      "poses": [
+        {"name": "Cat and Cow", "seconds": 45, "cue": "Move with the breath, one vertebra at a time."},
+        {"name": "Thread the Needle", "seconds": 45, "cue": "Arm slides under the body, shoulder to the mat. Both sides."},
+        {"name": "Doorway Chest Stretch", "seconds": 40, "cue": "Forearm on the frame, step through until the chest opens."},
+        {"name": "Triceps Overhead", "seconds": 35, "cue": "Elbow up, gently guide it back. Both sides."},
+        {"name": "Wrist Flexor Stretch", "seconds": 30, "cue": "Palm up, fingers back. Essential if you lift or climb."},
+        {"name": "Thoracic Extension", "seconds": 45, "cue": "Upper back over a rolled towel, arms overhead."},
+        {"name": "Neck Side Bend", "seconds": 35, "cue": "Ear toward the shoulder, opposite hand reaching down."},
+        {"name": "Puppy Pose", "seconds": 50, "cue": "Hips over knees, chest melts toward the floor."}
+      ]
+    }
+  ]
+}
