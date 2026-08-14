@@ -1,0 +1,51 @@
+{
+  "sport": "Golf",
+  "tagline": "Majors, links and the rulebook",
+  "categories": [
+    {
+      "id": "rules",
+      "name": "Rules & Scoring",
+      "blurb": "Strokes, penalties and terms",
+      "questions": [
+        {"id":"gf_l1","q":"How many holes are on a standard golf course?","o":["9","15","18","21"],"a":2,"e":"Usually a mix of par three, four and five holes."},
+        {"id":"gf_l2","q":"What is a birdie?","o":["One stroke under par","One stroke over par","Two under par","Level par"],"a":0,"e":"Two under is an eagle, three under an albatross."},
+        {"id":"gf_l3","q":"What is a bogey?","o":["One under par","One over par","Two over par","A missed putt"],"a":1,"e":"A double bogey is two over."},
+        {"id":"gf_l4","q":"What is the maximum number of clubs allowed in a player's bag?","o":["12","14","16","18"],"a":1,"e":"Carrying more brings a penalty."},
+        {"id":"gf_l5","q":"What is match play?","o":["Scoring by holes won rather than total strokes","Playing in pairs","Playing against par","A timed format"],"a":0,"e":"Stroke play counts every shot instead."},
+        {"id":"gf_l6","q":"What is the penalty for hitting a ball out of bounds?","o":["No penalty","One stroke and replay from the original spot","Two strokes","Loss of hole"],"a":1,"e":"Known as stroke and distance."},
+        {"id":"gf_l7","q":"What is an albatross?","o":["Two under par on a hole","Three under par on a hole","A hole in one","A missed cut"],"a":1,"e":"Most often a two on a par five."},
+        {"id":"gf_l8","q":"Where must a player not ground their club before a shot?","o":["On the fairway","In a bunker","On the green","In the rough"],"a":1,"e":"Touching the sand before the stroke incurs a penalty."}
+      ]
+    },
+    {
+      "id": "majors",
+      "name": "The Majors",
+      "blurb": "Four tournaments that define careers",
+      "questions": [
+        {"id":"gf_m1","q":"Which major is always played at the same course?","o":["The Masters","The Open Championship","US Open","PGA Championship"],"a":0,"e":"Augusta National hosts it every April."},
+        {"id":"gf_m2","q":"What is awarded to the winner of the Masters?","o":["A green jacket","The Claret Jug","The Wanamaker Trophy","A silver medal"],"a":0,"e":"The champion returns it to Augusta after a year."},
+        {"id":"gf_m3","q":"Which trophy goes to the Open Championship winner?","o":["Claret Jug","Green Jacket","Ryder Cup","US Open Trophy"],"a":0,"e":"The Open is the oldest of the four majors."},
+        {"id":"gf_m4","q":"How many majors are there in men's professional golf?","o":["Three","Four","Five","Six"],"a":1,"e":"Masters, PGA, US Open and The Open."},
+        {"id":"gf_m5","q":"Which major is the oldest, first played in 1860?","o":["The Open Championship","US Open","The Masters","PGA Championship"],"a":0,"e":"It began at Prestwick in Scotland."},
+        {"id":"gf_m6","q":"What is the Ryder Cup?","o":["A team contest between Europe and the United States","An individual world championship","A junior tournament","A seniors event"],"a":0,"e":"It is played every two years."},
+        {"id":"gf_m7","q":"Which country is the traditional home of golf?","o":["England","Scotland","Ireland","Netherlands"],"a":1,"e":"St Andrews is known as the home of golf."},
+        {"id":"gf_m8","q":"What is a links course?","o":["A coastal course on sandy ground","Any course with water hazards","A course with linked nines","A short par three course"],"a":0,"e":"Firm turf, dunes and wind define the style."}
+      ]
+    },
+    {
+      "id": "players",
+      "name": "Players & Records",
+      "blurb": "Champions of the modern era",
+      "questions": [
+        {"id":"gf_p1","q":"Who has won the most men's major championships?","o":["Tiger Woods","Jack Nicklaus","Walter Hagen","Ben Hogan"],"a":1,"e":"Nicklaus won eighteen majors."},
+        {"id":"gf_p2","q":"Which player won the 1997 Masters by twelve shots?","o":["Tiger Woods","Phil Mickelson","Ernie Els","Greg Norman"],"a":0,"e":"He was 21 and won by a record margin."},
+        {"id":"gf_p3","q":"Which golfer was nicknamed The Golden Bear?","o":["Arnold Palmer","Jack Nicklaus","Gary Player","Tom Watson"],"a":1,"e":"He earned the nickname early in his career."},
+        {"id":"gf_p4","q":"Which South African completed the career grand slam in 1965?","o":["Gary Player","Ernie Els","Retief Goosen","Bobby Locke"],"a":0,"e":"He won all four majors at least once."},
+        {"id":"gf_p5","q":"Which American was known as The King?","o":["Arnold Palmer","Sam Snead","Byron Nelson","Lee Trevino"],"a":0,"e":"Palmer's following was called Arnie's Army."},
+        {"id":"gf_p6","q":"Which women's tour is the leading professional circuit?","o":["LPGA Tour","WPGA","LET","WGA"],"a":0,"e":"The Ladies Professional Golf Association, founded in 1950."},
+        {"id":"gf_p7","q":"What is a hole in one also called?","o":["An ace","An eagle","A birdie","A condor"],"a":0,"e":"It counts as a single stroke from the tee."},
+        {"id":"gf_p8","q":"What does the term par represent?","o":["The expected number of strokes for a scratch golfer","The record score","The average of the field","The minimum possible score"],"a":0,"e":"Par is set by hole length and difficulty."}
+      ]
+    }
+  ]
+}
